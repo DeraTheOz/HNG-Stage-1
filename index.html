@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Profile Card Component</title>
+  </head>
+
+  <body>
+    <main>
+      <article data-testid="test-profile-card" class="card">
+        <div class="profile">
+          <figure>
+            <img
+              src="https://i.ibb.co/Z1xx8N4H/profile-image.jpg"
+              alt="Portrait of Emmanuel Ihemedu"
+              data-testid="test-user-avatar"
+            />
+          </figure>
+
+          <div aria-label="Profile Details">
+            <h2 data-testid="test-user-name" class="profile-name">
+              Emmanuel Ihemedu
+            </h2>
+            <p data-testid="test-user-bio">
+              I am an enthusiastic Frontend Developer passionate about crafting
+              scalable and highly efficient, responsive, and functional modern
+              web apps.
+            </p>
+            <p class="current-time">
+              <span>Time (ms):</span>
+              <time
+                aria-label="Current time in milliseconds"
+                data-testid="test-user-time"
+              ></time>
+            </p>
+          </div>
+        </div>
+
+        <nav aria-label="Social links">
+          <ul class="social-links" data-testid="test-user-social-links">
+            <li data-testid="test-user-social-twitter">
+              <a
+                href="http://x.com/deraamaobi"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+                <span>Twitter</span>
+              </a>
+            </li>
+            <li data-testid="test-user-social-github">
+              <a
+                href="http://github.com/DeraTheOz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                <span>Github</span>
+              </a>
+            </li>
+            <li data-testid="test-user-social-linkedin">
+              <a
+                href="http://linkedin.com/in/emmanuel-ihemedu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sections-wrapper">
+          <section aria-labelledby="hobbies">
+            <h3 id="hobbies">Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Watching Movies</li>
+              <li>Watching Football</li>
+              <li>Listening to Music</li>
+              <li>Playing Games</li>
+              <li>Eating Food</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="dislikes">
+            <h3 id="dislikes">Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Slow Internet</li>
+              <li>Washing Clothes</li>
+              <li>Washing Dishes</li>
+              <li>Unnecessary Noise</li>
+              <li>Power Outages</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+</html>
