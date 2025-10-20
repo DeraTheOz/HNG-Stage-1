@@ -23,6 +23,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+
+  @media screen and (max-width: 33.125rem) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form__label {
@@ -36,7 +40,6 @@
 }
 
 .form__input {
-  min-width: 18.75rem;
   width: 100%;
   min-height: 3rem;
   font-size: 0.875rem;
@@ -89,7 +92,7 @@
   font-weight: 500;
   color: #fff;
   background-color: #2563eb;
-  padding: 1.3rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 6px;
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -109,7 +112,7 @@
 
 /* Success Message */
 .hidden {
-  width: clamp(20rem, 90%, 35rem);
+  width: clamp(18rem, 90%, 25rem);
   color: #fff;
   background-color: #2563eb;
   border-radius: 6px;
