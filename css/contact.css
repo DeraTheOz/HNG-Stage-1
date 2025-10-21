@@ -14,7 +14,7 @@
 }
 
 .form-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -33,10 +33,6 @@
   display: inline-block;
   padding-bottom: 0.5rem;
   cursor: pointer;
-}
-
-.star {
-  color: green;
 }
 
 .form__input {
@@ -62,22 +58,14 @@
   border: 1px solid red;
 }
 
-.name-error,
-.email-error,
-.subject-error,
-.message-error {
+.fullNameError,
+.emailError,
+.subjectError,
+.messageError {
   color: red;
-  height: 1.2rem;
-  margin: 0.1rem 0;
+  margin-top: 0.2rem;
   font-size: 0.875rem;
-  /* opacity: 0; */
-  /* visibility: hidden; */
   transition: all 0.1s ease-in;
-}
-
-.error {
-  opacity: 1;
-  visibility: visible;
 }
 
 /* Message group */
